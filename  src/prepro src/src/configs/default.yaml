@@ -1,0 +1,15 @@
+# 论文实验参数 (对应论文第3章)
+model:
+  input_dim: 77       # 经过RFP选择后的特征维度
+  num_classes: 2      # 二分类任务
+
+training:
+  epochs: 50
+  batch_size: 64
+  lr: 0.001
+  dropout: 0.5        # 论文2.3.1节
+
+data:
+  dataset: "CIC-DDoS2019"
+  train_ratio: 0.8
+  normalize: True     # 论文2.2.3节的Min-Max标准化
